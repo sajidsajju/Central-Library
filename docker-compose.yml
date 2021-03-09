@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  library-ui-image:
+    container_name: library-ui-image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:80'
